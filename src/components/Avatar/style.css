@@ -1,0 +1,16 @@
+.avatar {
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  border-radius: 8px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+}
+
+.avatar.avatar__color1 {
+	background-color:#5DB2CD;
+}
+
+.avatar.avatar__color2 {
+	background-color:#FBA35C;
+}

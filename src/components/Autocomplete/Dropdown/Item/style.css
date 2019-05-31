@@ -1,0 +1,7 @@
+.autocomplete__dropdown__item {
+	display: flex;
+}
+
+.autocomplete__dropdown__item-details {
+	flex:2;
+}
