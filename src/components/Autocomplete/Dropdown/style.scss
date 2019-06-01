@@ -8,13 +8,13 @@
 	border-radius: .25rem;
 }
 
-.autocomplete__dropdown > div
+.autocomplete__dropdown > div {
 
 	&:nth-child(odd) .avatar {
    background-color:#5DB2CD;
 	}
 
-	&nth-child(even) .avatar {
+	&:nth-child(even) .avatar {
 	   background-color:#FBA35C;
 	}
 }
