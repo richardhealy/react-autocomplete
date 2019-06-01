@@ -10,3 +10,7 @@ export const filterData = (data, value) => {
 	})
 
 }
+
+export const showShouldResults = (showData, inputValue, items) => {
+  return (showData && items.length > 0 && inputValue.length > 0) ? true : false
+}

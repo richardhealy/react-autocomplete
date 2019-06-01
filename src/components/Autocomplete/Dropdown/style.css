@@ -1,0 +1,14 @@
+.autocomplete__dropdown {
+  position: absolute;
+  top: 42px;
+  max-height: 300px;
+  overflow-y: scroll;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: .25rem; }
+
+.autocomplete__dropdown > div:nth-child(odd) .avatar {
+  background-color: #5DB2CD; }
+
+.autocomplete__dropdown > div:nth-child(even) .avatar {
+  background-color: #FBA35C; }

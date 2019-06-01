@@ -1,0 +1,47 @@
+.autocomplete__dropdown__item {
+	display: flex;
+	padding: 1em 0.5em;
+	width: 100%;
+	
+	&-details {
+		flex:2;
+		width: 100%;
+	}
+
+	&-name {
+		font-size: 0.8em;
+		font-weight:500;
+		cursor:default;
+	}
+
+	&-email {
+		font-size: 0.6em;
+		color:#808080;
+		cursor:default;
+	}
+
+	.avatar {
+		margin-right: 8px;
+	}
+}
+
+.autocomplete__dropdown__item:hover,
+.autocomplete__dropdown__item.selected {
+		
+	background-color: #F6FCFA;
+
+	.autocomplete__dropdown__item-name {
+		color:#90cdb5;
+	}
+}
+
+// Remove the selected css affect if the 
+// user is hovering over the dropdown
+.autocomplete__dropdown:hover .autocomplete__dropdown__item.selected {
+		
+	background-color: inherit;
+
+	.autocomplete__dropdown__item-name {
+		color:inherit;
+	}
+}

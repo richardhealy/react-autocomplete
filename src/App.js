@@ -11,7 +11,9 @@ function App() {
 
   return (
     <div className="app">
-      <Autocomplete apiData={data} />
+    	<div className="container">
+      	<Autocomplete apiData={data} />
+      </div>
     </div>
   );
 }
