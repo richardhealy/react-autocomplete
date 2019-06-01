@@ -9,6 +9,22 @@ import './style.css'
 
 class Item extends Component {
 
+
+  constructor(props) {
+    super(props)
+    this.itemRef = React.createRef()
+  }
+
+  shouldComponentUpdate(nextProps) {
+    
+    if(nextProps.parentRef && nextProps.selected === true) {
+
+      nextProps.parentRef.current.scrollTo(0, this.itemRef.current.offsetTop)
+    }
+
+    return true
+  }
+
   // This would be an uuid, but as we don't have 
   // that in the data, this will have to be name for now
   onClick = name => {
@@ -34,6 +50,7 @@ class Item extends Component {
 
     return (
       <div 
+        ref={this.itemRef}
         className={`autocomplete__dropdown__item  ${selected ? 'selected' : ''}`} 
         onClick={() => this.onClick(name)}
       >

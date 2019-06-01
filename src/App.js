@@ -3,6 +3,10 @@ import Autocomplete from './components/Autocomplete'
 import apiData from './data/data.js'
 import './App.css';
 
+const onChange = value => {
+  console.log(value)
+}
+
 function App() {
 
 	const {
@@ -12,7 +16,10 @@ function App() {
   return (
     <div className="app">
     	<div className="container">
-      	<Autocomplete apiData={data} />
+      	<Autocomplete 
+          data={data} 
+          onChange={onChange}
+        />
       </div>
     </div>
   );
